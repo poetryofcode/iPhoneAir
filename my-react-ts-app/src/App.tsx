@@ -1,7 +1,13 @@
+import "./reset.css";
 import "./App.css";
+import Main from "./components/Main";
 
 function App() {
-  return <>sdf</>;
+  return (
+    <>
+      <Main />
+    </>
+  );
 }
 
 export default App;
