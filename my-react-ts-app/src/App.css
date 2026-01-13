@@ -18,6 +18,11 @@ body {
   font-weight: 400;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .section-main {
   text-align: center;
   min-height: 692px;
@@ -204,9 +209,41 @@ a {
   );
 }
 
+.header {
+  background-color: #161617;
+  color: #d0d0d1;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  padding: 14px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 26px;
+}
+
+.header__items {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
 @media (max-width: 1100px) {
   .collections {
     grid-template-columns: 1fr;
+  }
+  .menu {
+    display: none;
   }
 }
 
