@@ -238,6 +238,52 @@ a {
   align-items: center;
 }
 
+.footer {
+  padding: 100px 0 80px;
+  background-color: #161617;
+  color: #d0d0d1;
+}
+
+.footer__info {
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 18px;
+}
+
+.footer__info a {
+  padding: 0 10px;
+  color: #0071e3;
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__item {
+  position: relative;
+}
+
+.footer__item::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  width: 1px;
+  height: 10px;
+  background-color: #6e6e73;
+}
+
+.footer__item:nth-child(1)::after {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .collections {
     grid-template-columns: 1fr;
@@ -255,5 +301,15 @@ a {
     background-image: image-set(
       "../src/assets/images/hero_iphone_17_pro_small.jpg"
     );
+  }
+
+  .footer__info {
+    display: none;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 }
